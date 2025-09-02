@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+
 <h1>Registro</h1>
 {{ error }}
 <form action="/signup/" method="post">
@@ -6,3 +10,5 @@
 <button type="submit">
     Registrarse</button>
 </form>
+
+{% endblock %}  
