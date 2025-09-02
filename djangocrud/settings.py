@@ -75,9 +75,13 @@ WSGI_APPLICATION = "djangocrud.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cruddjango',      # Nombre de tu base de datos
+        'USER': 'postgres',          # Usuario de PostgreSQL
+        'PASSWORD': '199812',   # Contraseña
+        'HOST': 'localhost',        # O la IP/host del servidor de la BD
+        'PORT': '5432',             # Puerto por defecto de PostgreSQL
     }
 }
 
